@@ -38,7 +38,32 @@
     <section>
       <h2>Git Branches</h2>
       <ol>
-        <li>git branch branch_name</li>
+        <h4>Creating and working with new branch</h4>
+        <li>git branch hello-world-images (creates a new branch)</li>
+        <li>git branch (lists all the branches)</li>
+        <li>git checkout hello-world-images (switch to this new branch)</li>
+        <li>git status</li>
+        <li>git add --all</li>
+        <li>git status</li>
+        <li>git commit -m "Added image hello world images"</li>
+        <h4>Need to work in emergency fix</h4>
+        <li>git checkout master</li>
+        <li>
+          git checkout -b emergency-fix (create a new branch and checkout to
+          that branch)
+        </li>
+        <li>
+          git status/ git add index.html/ git commit -m "updated emergency-fix"
+        </li>
+        <li>git checkout master</li>
+        <li>git merge emergency-fix</li>
+        <li>git branch -d emergency-fix</li>
+        <h4>Merge conflicts from hello world</h4>
+        <li>git checkout hello-world-images</li>
+        <li>git add --all/ git commit -m "added new image"</li>
+        <li>git checkout master</li>
+        <li>git merge hello-world-images (Gives merge conflict error)</li>
+        <li>git status (This will show the merge conflict error)</li>
       </ol>
       <p>
         Uses of branch - Helps create multiple branch to work in a large

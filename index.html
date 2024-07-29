@@ -20,8 +20,10 @@
         <li>git status (Check status of git folder)</li>
         <li>git add -A/--all (Add all untracked files to the repo)</li>
         <li>git restore filename (Restore files from repo)</li>
-
-        <li></li>
+        <li>
+          git commit -m "first release" (Its a savepoint - Stage to commit)
+        </li>
+        <li>git log</li>
       </ol>
       <p>
         Git maintains two status for each files (a) untracked - for files in
@@ -32,5 +34,32 @@
         This line is added to emergency fix branch to check than merging works
       </p>
     </section>
+
+    <section>
+      <h2>Git Branches</h2>
+      <ol>
+        <li>git branch branch_name</li>
+      </ol>
+      <p>
+        Uses of branch - Helps create multiple branch to work in a large
+        project. In case of bug fixes, we can create a new branch from the main
+        branch called small-error-fix. We can fix the error in the
+        small-error-fix and then merge it with the main branch. When our dev is
+        finished. we can add the small-error-fix to be dev branch also.
+      </p>
+    </section>
+
+    <div>
+      <img
+        src="https://media.istockphoto.com/id/1443562748/photo/cute-ginger-cat.jpg?s=612x612&w=0&k=20&c=vvM97wWz-hMj7DLzfpYRmY2VswTqcFEKkC437hxm3Cg="
+        alt="cat images"
+        style="
+          width: 100%;
+          max-width: 960px;
+          max-height: 100px;
+          object-fit: cover;
+        "
+      />
+    </div>
   </body>
 </html>

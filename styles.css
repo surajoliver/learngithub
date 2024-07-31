@@ -53,8 +53,8 @@ body {
 }
 
 code {
-  font-family: monospace;
-  font-size: 1.4rem;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.2rem;
 }
 
 h1 {
@@ -108,7 +108,7 @@ aside {
   position: sticky;
   top: 5rem;
   height: calc(100vh - 5rem); /* Adjust the height as needed */
-  overflow-y: auto;
+  overflow-y: fixed;
 }
 
 main {
@@ -124,7 +124,8 @@ footer {
   color: white;
   padding: 1em;
   text-align: center;
-  opacity: 50%;
+  opacity: 70%;
+  font-size: 1.2rem;
 }
 
 code {
@@ -152,8 +153,7 @@ ul {
   padding: 0;
 }
 aside a {
-  display: inline-block;
-  width: 100%;
+  display: block;
   text-decoration: none;
   cursor: pointer;
   padding: 1rem 3rem;
@@ -161,7 +161,7 @@ aside a {
   font-size: 1.3rem;
   font-weight: 500;
   letter-spacing: 0.1rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
   transition: background-color 0.3s ease;
 }
 

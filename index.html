@@ -9,158 +9,171 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <section>
-      <h1>Learn Git</h1>
-      <p>This is a project to learn git and how to use it.</p>
-    </section>
+    <div class="layout">
+      <header>
+        <div>Simplified Strat-Git</div>
+      </header>
+      <aside>nav item list</aside>
+      <main>
+        <section>
+          <h1>Learn Git</h1>
+          <p>This is a project to learn git and how to use it.</p>
+        </section>
 
-    <section>
-      <h2>Getting started with git</h2>
+        <section>
+          <h2>Getting started with git</h2>
 
-      <div class="flex-col">
-        <p>Initialized git in current folder</p>
-        <code
-          >git init<br />git config --global user.name "Suraj Oliver"<br />git
-          config --global user.email "suraj.oliver@gmail.com"</code
-        >
-      </div>
+          <div class="flex-col">
+            <p>Initialized git in current folder</p>
+            <code
+              >git init<br />
+              git config --global user.name "Suraj Oliver"<br />git config
+              --global user.email "suraj.oliver@gmail.com"</code
+            >
+          </div>
 
-      <div class="flex-col">
-        <p>Check status of git folder</p>
-        <code>git status</code>
-      </div>
+          <div class="flex-col">
+            <p>Check status of git folder</p>
+            <code>git status</code>
+          </div>
 
-      <div class="flex-col">
-        <p>
-          Add untracked files to git repo and Remove tracked files from git repo
-          to local path
-        </p>
-        <code>git add -A/--all<br />git restore filename</code>
-      </div>
+          <div class="flex-col">
+            <p>
+              Add untracked files to git repo and Remove tracked files from git
+              repo to local path
+            </p>
+            <code>git add -A/--all<br />git restore filename</code>
+          </div>
 
-      <div class="flex-col">
-        <p>Commit marks a savepoint - Stage to commit</p>
-        <code>git commit -m "second release"</code>
-      </div>
+          <div class="flex-col">
+            <p>Commit marks a savepoint - Stage to commit</p>
+            <code>git commit -m "second release"</code>
+          </div>
 
-      <div class="flex-col">
-        <p>Show all the Logs till date</p>
-        <code>git log</code>
-      </div>
-    </section>
+          <div class="flex-col">
+            <p>Show all the Logs till date</p>
+            <code>git log</code>
+          </div>
+        </section>
 
-    <section>
-      <h2>Git Branches</h2>
-      <div class="flex-col">
-        <p>Creates a new branch</p>
-        <code>git branch branch_name</code>
-      </div>
+        <section>
+          <h2>Git Branches</h2>
+          <div class="flex-col">
+            <p>Creates a new branch</p>
+            <code>git branch branch_name</code>
+          </div>
 
-      <div class="flex-col">
-        <p>Lists all the branches</p>
-        <code>git branch</code>
-      </div>
+          <div class="flex-col">
+            <p>Lists all the branches</p>
+            <code>git branch</code>
+          </div>
 
-      <div class="flex-col">
-        <p>Switch to a different branch</p>
-        <code>git checkout branch_name</code>
-      </div>
+          <div class="flex-col">
+            <p>Switch to a different branch</p>
+            <code>git checkout branch_name</code>
+          </div>
 
-      <div class="flex-col">
-        <p>Merge a branch with current branch</p>
-        <code>git merge branch_name</code>
-      </div>
+          <div class="flex-col">
+            <p>Merge a branch with current branch</p>
+            <code>git merge branch_name</code>
+          </div>
 
-      <div class="flex-col">
-        <p>Creating and working with new branch - hello-world-images</p>
-        <code
-          >git branch hello-world-images<br />
-          git branch (lists all the branches)<br />
-          git checkout hello-world-images (switch to this new branch)<br />
-          git status<br />
-          git add --all<br />
-          git status<br />
-          git commit -m "Added image hello world images"<br
-        /></code>
-      </div>
-    </section>
+          <div class="flex-col">
+            <p>Creating and working with new branch - hello-world-images</p>
+            <code
+              >git branch hello-world-images<br />
+              git branch (lists all the branches)<br />
+              git checkout hello-world-images (switch to this new branch)<br />
+              git status<br />
+              git add --all<br />
+              git status<br />
+              git commit -m "Added image hello world images"<br
+            /></code>
+          </div>
+        </section>
 
-    <section>
-      <h2>Working with Multiple Branches</h2>
-      <div class="flex-col">
-        <p>Need to work in emergency fix</p>
-        <code
-          >git checkout master<br />
+        <section>
+          <h2>Working with Multiple Branches</h2>
+          <div class="flex-col">
+            <p>Need to work in emergency fix</p>
+            <code
+              >git checkout master<br />
 
-          git checkout -b emergency-fix (create a new branch and checkout to
-          that branch)
-          <br />
+              git checkout -b emergency-fix (create a new branch and checkout to
+              that branch)
+              <br />
 
-          git status/ git add index.html/ git commit -m "updated emergency-fix"
-          <br />
-          git checkout master<br />
-          git merge emergency-fix<br />
-          git branch -d emergency-fix<br />
-        </code>
-      </div>
+              git status/ git add index.html/ git commit -m "updated
+              emergency-fix"
+              <br />
+              git checkout master<br />
+              git merge emergency-fix<br />
+              git branch -d emergency-fix<br />
+            </code>
+          </div>
 
-      <div class="flex-col">
-        <p>Merge conflicts from hello world</p>
-        <code>
-          git checkout hello-world-images<br />
-          git add --all/ git commit -m "added new image"<br />
-          git checkout master<br />
-          git merge hello-world-images (Gives merge conflict error)<br />
-          git status (This will show the merge conflict error)<br
-        /></code>
-      </div>
-    </section>
+          <div class="flex-col">
+            <p>Merge conflicts from hello world</p>
+            <code>
+              git checkout hello-world-images<br />
+              git add --all/ git commit -m "added new image"<br />
+              git checkout master<br />
+              git merge hello-world-images (Gives merge conflict error)<br />
+              git status (This will show the merge conflict error)<br
+            /></code>
+          </div>
+        </section>
 
-    <section>
-      <h2>Working with Github</h2>
-      <div class="flex-col">
-        <p>Maps origin to the github path</p>
-        <code
-          >git remote add origin
-          https://github.com/surajoliver/learngithub.git</code
-        >
-      </div>
+        <section>
+          <h2>Working with Github</h2>
+          <div class="flex-col">
+            <p>Maps origin to the github path</p>
+            <code
+              >git remote add origin
+              https://github.com/surajoliver/learngithub.git</code
+            >
+          </div>
 
-      <div class="flex-col">
-        <p>Push master to origin and make master the default branch</p>
-        <code>git push --setupstream origin master</code>
-      </div>
+          <div class="flex-col">
+            <p>Push master to origin and make master the default branch</p>
+            <code>git push --setupstream origin master</code>
+          </div>
 
-      <div class="flex-col">
-        <p>Gets all change history for orgin branch</p>
-        <code>git fetch origin </code>
-      </div>
+          <div class="flex-col">
+            <p>Gets all change history for orgin branch</p>
+            <code>git fetch origin </code>
+          </div>
 
-      <div class="flex-col">
-        <p>Other git commands</p>
-        <code
-          >git log origin/master<br />git diff origin/master (Find difference
-          between origin/master and local master)<br />git merge origin/master
-          (Merge the current branch with the branch master, on origin)<br />git
-          pull (Git fetch + Git merge)<br />git push origin (Push current branch
-          with default remote branch)</code
-        >
-      </div>
+          <div class="flex-col">
+            <p>Other git commands</p>
+            <code
+              >git log origin/master<br />git diff origin/master (Find
+              difference between origin/master and local master)<br />git merge
+              origin/master (Merge the current branch with the branch master, on
+              origin)<br />git pull (Git fetch + Git merge)<br />git push origin
+              (Push current branch with default remote branch)</code
+            >
+          </div>
 
-      <div class="flex-col">
-        <p></p>
-        <code></code>
-      </div>
+          <div class="flex-col">
+            <p></p>
+            <code></code>
+          </div>
 
-      <div class="flex-col">
-        <p></p>
-        <code></code>
-      </div>
-    </section>
+          <div class="flex-col">
+            <p></p>
+            <code></code>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>Copyright 2024 reserved</p>
+      </footer>
+    </div>
   </body>
 </html>

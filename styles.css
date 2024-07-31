@@ -52,6 +52,11 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
+code {
+  font-family: monospace;
+  font-size: 1.4rem;
+}
+
 h1 {
   font-size: 2.4rem;
 }
@@ -70,6 +75,48 @@ section {
   flex-direction: column;
   align-items: flex-start;
 }
+.layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: auto 1fr;
+  min-height: 100vh;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 2rem 1rem;
+  font-weight: 700;
+  grid-row: 1;
+  grid-column: 1/-1;
+}
+
+aside {
+  background-color: #f4f4f4;
+  padding: 4rem 2rem;
+  width: 20rem;
+  position: sticky;
+  grid-row: 2;
+  grid-column: 1;
+}
+
+main {
+  grid-row: 2;
+  grid-column: 2;
+  padding: 1em;
+}
+
+footer {
+  grid-row: 3;
+  grid-column: 1/-1;
+  background: #333;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  opacity: 50%;
+}
 
 code {
   padding: 3rem 5rem;
@@ -79,6 +126,10 @@ code {
   border-radius: 20px;
   margin-bottom: 2rem;
   margin-right: 2rem;
+}
+
+p {
+  color: #666;
 }
 
 li br {
